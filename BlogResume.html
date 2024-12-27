@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLog Template</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #aee2aa;
+            color: #2e7d32;
+        }
+        header{
+            background: linear-gradient(45deg,#2e7d32,#66bb6a);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        header h1{
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minma(300px,1fr));
+            gap: 1rem;
+            padding: 1rem;  
+        } 
+        .blog-post{
+            background-color: rgb(206, 240, 216);
+            border-radius: 8px;
+            box-shadow: o 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .blog-post:hover{
+            transform: scale(1.05);
+        }
+        .blog-post img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .blog-post-content{
+            padding: 1rem;
+        }
+        .blog-post-content h2{
+            margin:0 0 0.5rem;
+            font-size: 1.5rem;
+        }
+        .blog-post-content p{
+            margin: 0 0 1rem;
+            line-height: 1.6;
+        }
+        footer{
+            text-align: center;
+            padding: 1rem;
+            background: #2e7d32;
+            color: white;
+        }
+        footer a{
+            color: #a5d6a7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Welcome to my Block</h1>
+    <h2>Enchanted Forests</h2></header>
+    <main>
+        <div class="blog-post"><Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqGZzcSIm8cbYHsX7PHiNJWXd85YDwWPw1Q&s" alt="Butterflies in the Forest"></Img>
+            <div class="blog-post-content">
+                <h2>Butterflies in the Canpoy </h2> 
+                <p>Discover the vibrant world of buterflies as they flutter gracefully among the tall trees oof the forests canopy,bringing life to the serence freenery.</p>
+            </div>
+        </div>
+        <div class="blog-post"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq1hXyEv1__RW2dJq5BoyX9WoArRZELi9fdw&s" alt="Forest trails">
+            <div class="blog-post-content">
+                <h2>Wandering Through Forest trails</h2>
+                <p>Embark on a jourany throuh lush trails surrounded by towering trees and the gentle hum of nature's melody,a perfect retreat for the soul.</p>
+            </div>
+        </div>
+        <div class="blog-post"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RU6E0lxOO29-lffqKhR8rciiXK4-am1Hbg&s" alt="Hidden Waterfalls">
+            <div class="blog-post-content">
+                <h2>Hidden Waterfalls</h2>
+                <p>Experiences the magic of secluded waterfalls,where the cool mist mingles with the scent of wildflowers and the delicate dance of butterflies.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enchanted Forest.Designed with <a href="#">nature's inspiraton</a></p>
+    </footer>
+</body>
+</html>
